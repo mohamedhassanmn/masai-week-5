@@ -1,0 +1,123 @@
+body{
+  width:1140px;
+  height:100vh;
+  background-image:url(resources/bg-img.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position:relative;
+}
+/*linear-gradient(to left bottom,rgba(0, 0,0,0.8),rgba(127, 140, 141,0.8)),*/
+.search_container{
+  position:relative;
+}
+input{
+  width:700px;
+  height:40px;
+  border:1px solid #ccc;
+  background-color: rgba(0, 0, 0,0.7);
+  position:absolute;
+  top:50px;
+  left:450px;
+  color:rgba(255,255,255,0.8);
+  font-size: 30px;
+  padding:15px;
+  font-family: 'Bahianita', cursive;
+  letter-spacing: 2px;
+}
+.search_icon{
+  position:absolute;
+  top:70px;
+  right:0;
+  color:#ccc;
+  height: 30px;
+  width:50px;
+  font-size: 30px !important;
+  cursor: pointer;
+}
+.cards_container{
+  position:absolute;
+  top:500px;
+  left:50px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-gap:10px;
+}
+.cards{
+  position:relative;
+  border-radius:5px;
+  width:300px;
+  height:250px;
+  background-color: rgba(0,0,0,0.6);
+}
+.img_size{
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: grey;
+  color:rgba(235, 77, 75,1.0);
+  width:300px;
+  height:120px;
+  font-size: 30px;
+}
+.data_cont{
+  position:absolute;
+  display:grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 60px 60px;
+  grid-gap:20px;
+  top:120px;
+  left:0;
+  background-color: #fff;
+  width:300px;
+  height:120px;
+}
+h3:nth-child(1){
+  grid-area:1/1/span 1/span 1;
+  font-size: 15px;
+}
+h3:nth-child(2){
+  grid-area:1/2/span 1/span 1;
+  font-size: 15px;
+}
+h3:nth-child(1){
+  grid-area:2/1/span 1/span 2;
+  font-size: 15px;
+}
+.sort_session{
+  background-color: rgba(0,0,0,0.6);
+  position:relative;
+  border-radius: 5px;
+  height:180px;
+  width:250px;
+}
+button{
+  border-radius: 5px;
+  height:50px;
+  width:150px;
+  border:1px solid rgba(235, 77, 75,1);
+  background-color: rgba(235, 77, 75,1);
+  color:#fff;
+  font-size: 20px;
+  word-wrap: break-word;
+}
+#y_high_to_low{
+  position:absolute;
+  top:160px;
+  left:20px;
+}
+#y_low_to_high{
+  position:absolute;
+  top:220px;
+  left:20px;
+}
+#m_high_to_low{
+  position:absolute;
+  top:280px;
+  left:20px;
+}
+#m_low_to_high{
+  position:absolute;
+  top:340px;
+  left:20px;
+}
